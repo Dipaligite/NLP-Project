@@ -1,62 +1,61 @@
+# WhatsApp Chat Analyzer
 
-# Sentiment Analysis with Transformer Models
+## Table of Contents
 
-This repository contains a Python  for performing sentiment analysis on a  dataset using transformer models, including DistilBERT. 
+- [Introduction](#introduction)
+- [Demo](#demo)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Examples](#examples)
 
-## Dataset Overview
+## Introduction
 
-The dataset consists of labeled with one of four sentiment categories:
+The **WhatsApp Chat Analyzer** is designed to help you gain valuable insights from your WhatsApp chats. It provides various functionalities to analyze and visualize data extracted from the chat exports. This tool allows you to explore patterns, trends, and statistics related to your conversations, helping you understand your messaging behavior and communication patterns.
 
-- **Negative**: Indicates unfavorable sentiment.
-- **Positive**: Indicates favorable sentiment.
+The project utilizes various open-source libraries and tools. See the [`requirements.txt`](https://github.com/karanprasadgupta/WhatsAppChatAnalzyer/blob/main/requirements.txt) file for details.
 
-### Data Columns
-- **Sentiment**: The sentiment expressed in the tweet (Negative, Positive).
-- ** Content**: The actual text of the tweet.
+## Demo
 
-### Sentiment Distribution
-- **Negative**: 99.92% of the dataset.
-- **Positive**: 99.98% of the dataset.
+Check out the live demo of the WhatsAppChatAnalzyer App: aap.py
 
-## Models Implemented
+> *If the website does not load properly, try opening it in incognito mode.*
 
-The Python uses the following transformer models for sentiment analysis:
-- **DistilBERT**: A smaller, faster version of BERT.
+## Features
 
-## How to Use
+- **Chat Data Extraction**: The analyzer can extract relevant information from WhatsApp chat exports, including message timestamps, senders, and message content.
+- **Participant Analysis**: Gain insights into individual participants' activity, such as message count, average message length, and active hours.
+- **Chat Statistics**: Get an overview of chat statistics, including total messages, media messages, and the most active day and time.
+- **Word Cloud Generation**: Generate word clouds to visualize frequently used words in the chat.
+- **Emoji Analysis**: Analyze the usage of emojis in the chat and generate insights about the most commonly used emojis.
+- **Interactive Visualization**: Utilize interactive plots and graphs to visualize data and patterns.
 
-### Step 1: Load the Dataset
-The Python loads the dataset containing  tweet content. The dataset is pre-split into sentiment and score.
+## Installation
 
-### Step 2: Preprocess the Data
-The Python includes a preprocessing step that:
-- Tokenizes the tweet text using the appropriate tokenizer for each transformer model.
-- Converts sentiment labels into numerical format for model training.
+To get a local copy of this project up and running, follow these steps:
 
-### Step 3: Train the Model
-The python allows you to choose from the following transformer models:
-- **DistilBERT**
+1. Install the required dependencies:
 
+   pip install -r requirements.txt
+   ```
+2. Running the App:
 
-### Step 4: Evaluate the Model
-Once trained, the model is evaluated on the validation set.
-- **Accuracy**: Prportion of correct predictions.
--**sentiment**: Prportion of correct predictions
+   streamlit run app.py
+   ```
+   This will start the app in the local environment
 
+## Usage
+- Export your WhatsApp chat conversation as a text file. You can find instructions on how to export chat logs on the WhatsApp website.
+- Visit the  app.py in local environment.
+- Upload the chat text file on the server.
+- Follow the on-screen instructions to choose the desired analysis options.
 
-### Step 5: Visualize Results
-The python includes predictions sentiment, score.
+## Examples
+Here are a few examples of how you can use the WhatsApp Chat Analyzer tool:
+- Analyze chat statistics for a group chat over a specific time period.
+- Generate a word cloud to visualize the most frequently used words in a one-on-one conversation.
+- View active participation in a group chat among multiple participants.
 
-```python
-model.save_pretrained('model_dir')
-tokenizer.save_pretrained('model_dir')
-```
-
-## Example Usage
-
-Here’s a simple example of how to run the python:
-
-1. Load and preprocess the dataset.
-2. uncased_Finetune a transformer model (e.g.,distilbert-base-uncased-finetuned-sst-2-english ).
-3. Evaluate the model and visualize performance sentiment and score.
-4. Save the trained model for future use.
+> The WhatsAppChatAnalzyer App was developed just for learning purposes.
+> 
+> Feel free to customize and enhance the App according to your needs. Happy WhatsApp chat analysis!
