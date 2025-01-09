@@ -1,61 +1,19 @@
-# WhatsApp Chat Analyzer
 
-## Table of Contents
+# Investment Analysis
 
-- [Introduction](#introduction)
-- [Demo](#demo)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Examples](#examples)
+### Business Problem Overview
+Spark Funds, an asset management company wants to make investments in a few companies. The CEO of Spark Funds wants to understand the global trends in investments so that company can take the investment decisions effectively.
 
-## Introduction
+### Business Goals
+Spark Funds wants to invest where most other investors are investing.
 
-The **WhatsApp Chat Analyzer** is designed to help you gain valuable insights from your WhatsApp chats. It provides various functionalities to analyze and visualize data extracted from the chat exports. This tool allows you to explore patterns, trends, and statistics related to your conversations, helping you understand your messaging behavior and communication patterns.
+It wants to invest between 5 to 15 million USD per round of investment
 
-The project utilizes various open-source libraries and tools. See the [`requirements.txt`](https://github.com/karanprasadgupta/WhatsAppChatAnalzyer/blob/main/requirements.txt) file for details.
+It wants to invest only in English-speaking countries because of the ease of communication with the companies it would invest in.
 
-## Demo
+### Steps performed for analysis
+1. Process data (Merge dataset, handle missing values, etc.).
 
-Check out the live demo of the WhatsAppChatAnalzyer App: aap.py
-
-> *If the website does not load properly, try opening it in incognito mode.*
-
-## Features
-
-- **Chat Data Extraction**: The analyzer can extract relevant information from WhatsApp chat exports, including message timestamps, senders, and message content.
-- **Participant Analysis**: Gain insights into individual participants' activity, such as message count, average message length, and active hours.
-- **Chat Statistics**: Get an overview of chat statistics, including total messages, media messages, and the most active day and time.
-- **Word Cloud Generation**: Generate word clouds to visualize frequently used words in the chat.
-- **Emoji Analysis**: Analyze the usage of emojis in the chat and generate insights about the most commonly used emojis.
-- **Interactive Visualization**: Utilize interactive plots and graphs to visualize data and patterns.
-
-## Installation
-
-To get a local copy of this project up and running, follow these steps:
-
-1. Install the required dependencies:
-
-   pip install -r requirements.txt
-   ```
-2. Running the App:
-
-   streamlit run app.py
-   ```
-   This will start the app in the local environment
-
-## Usage
-- Export your WhatsApp chat conversation as a text file. You can find instructions on how to export chat logs on the WhatsApp website.
-- Visit the  app.py in local environment.
-- Upload the chat text file on the server.
-- Follow the on-screen instructions to choose the desired analysis options.
-
-## Examples
-Here are a few examples of how you can use the WhatsApp Chat Analyzer tool:
-- Analyze chat statistics for a group chat over a specific time period.
-- Generate a word cloud to visualize the most frequently used words in a one-on-one conversation.
-- View active participation in a group chat among multiple participants.
-
-> The WhatsAppChatAnalzyer App was developed just for learning purposes.
-> 
-> Feel free to customize and enhance the App according to your needs. Happy WhatsApp chat analysis!
+2. Conduct Funding Type Analysis - Comparing the typical investment amounts in the venture, seed, angel, private equity etc. so that Spark Funds can choose the type that is best suited for their strategy.
+3. Conduct Country Analysis - Identifying the countries which have been the most heavily invested in the past. These will be Spark Funds’ favourites as well.
+4. Conduct Sector Analysis - Understanding the distribution of investments across the eight main sectors.
